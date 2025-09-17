@@ -1,0 +1,309 @@
+petros.paraskevopoulos@Mac-Studio test-dependabot-cli % ./dependabot update -f .github/dependabot/gradle.yml --local . --timeout 20m >> result.jsonl
+    cli | 2025/09/17 09:56:54 image ghcr.io/github/dependabot-update-job-proxy/dependabot-update-job-proxy:latest is already up to date
+    cli | 2025/09/17 09:56:54 using image ghcr.io/github/dependabot-update-job-proxy/dependabot-update-job-proxy:latest at sha256:134b804c910426d5d5173c8e7f567bc1776f62c922bd39ae3db0b4d09e8821b7
+    cli | 2025/09/17 09:56:55 image ghcr.io/dependabot/dependabot-updater-gradle is already up to date
+    cli | 2025/09/17 09:56:55 using image ghcr.io/dependabot/dependabot-updater-gradle at sha256:b04f7e83d9e9edb1604742ba316d18e7cabd536ccf3d858ea314b30ad6995398
+  proxy | WARNING: Skipping duplicate certificate in file ca-cert-orbstack-root.pem
+updater | Reinitialized existing Git repository in /home/dependabot/dependabot-updater/repo/.git/
+  proxy | 2025/09/17 09:56:57 proxy starting, commit: 32f72c93e3b014db177b94dcad54e96d6e241a4a
+  proxy | 2025/09/17 09:56:57 GitHubAPIHandler has no app access tokens
+  proxy | 2025/09/17 09:56:57 Listening (:1080)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | rehash: warning: skipping duplicate certificate in orbstack-root.pem
+updater | 2 added, 0 removed; done.
+updater | Running hooks in /etc/ca-certificates/update.d...
+updater | Processing triggers for ca-certificates-java (20240118) ...
+updater | Adding debian:dbot-ca.pem
+updater | Adding debian:orbstack-root.pem
+updater | done.
+updater | done.
+updater | 2025/09/17 09:57:13 INFO Starting job processing
+updater | 2025/09/17 09:57:13 INFO Job definition: {"job":{"package-manager":"gradle","allowed-updates":[{"update-type":"all"}],"debug":false,"dependency-groups":[],"dependencies":null,"dependency-group-to-refresh":null,"existing-pull-requests":[],"existing-group-pull-requests":[],"experiments":null,"ignore-conditions":[],"lockfile-only":false,"requirements-update-strategy":null,"security-advisories":[],"security-updates-only":false,"source":{"provider":"github","repo":"ParaskP7/test-dependabot-cli","directory":"/","branch":"main","hostname":null,"api-endpoint":null},"update-subdependencies":false,"updating-a-pull-request":false,"vendor-dependencies":false,"reject-external-code":false,"repo-private":false,"commit-message-options":null,"credentials-metadata":[],"max-updater-run-time":0,"exclude-paths":null,"multi-ecosystem-update":false}}
+  proxy | 2025/09/17 09:57:13 [002] GET https://github.com/ParaskP7/test-dependabot-cli.git/info/refs?service=git-upload-pack
+  proxy | 2025/09/17 09:57:14 [002] 200 https://github.com/ParaskP7/test-dependabot-cli.git/info/refs?service=git-upload-pack
+updater | 2025/09/17 09:57:15 INFO Base commit SHA: cccd099d012e2627bd589023fe65893363ccc0c2
+updater | 2025/09/17 09:57:15 INFO Finished job processing
+updater | 2025/09/17 09:57:17 INFO Starting job processing
+  proxy | 2025/09/17 09:57:17 [003] POST http://host.docker.internal:50478/update_jobs/cli/update_dependency_list
+  proxy | 2025/09/17 09:57:17 [003] 200 http://host.docker.internal:50478/update_jobs/cli/update_dependency_list
+  proxy | 2025/09/17 09:57:17 [004] POST http://host.docker.internal:50478/update_jobs/cli/increment_metric
+  proxy | 2025/09/17 09:57:17 [004] 200 http://host.docker.internal:50478/update_jobs/cli/increment_metric
+updater | 2025/09/17 09:57:17 INFO Starting update job for ParaskP7/test-dependabot-cli
+updater | 2025/09/17 09:57:17 INFO Checking all dependencies for version updates...
+updater | 2025/09/17 09:57:17 INFO Checking if androidx.core:core-ktx 1.17.0 needs updating
+  proxy | 2025/09/17 09:57:17 [006] GET https://maven.google.com/androidx/core/group-index.xml
+  proxy | 2025/09/17 09:57:18 [006] 301 https://maven.google.com/androidx/core/group-index.xml
+  proxy | 2025/09/17 09:57:19 [008] GET https://dl.google.com/dl/android/maven2/androidx/core/group-index.xml
+  proxy | 2025/09/17 09:57:19 [008] 200 https://dl.google.com/dl/android/maven2/androidx/core/group-index.xml
+  proxy | 2025/09/17 09:57:20 [010] GET https://repo.maven.apache.org/maven2/androidx/core/core-ktx/maven-metadata.xml
+  proxy | 2025/09/17 09:57:21 [010] 404 https://repo.maven.apache.org/maven2/androidx/core/core-ktx/maven-metadata.xml
+  proxy | 2025/09/17 09:57:21 [012] GET https://repo.maven.apache.org/maven2/androidx/core/core-ktx/
+  proxy | 2025/09/17 09:57:21 [012] 404 https://repo.maven.apache.org/maven2/androidx/core/core-ktx/
+updater | 2025/09/17 09:57:21 INFO Filtered out 98 pre-release versions
+updater | 2025/09/17 09:57:21 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:21 INFO Release date not available for version 1.17.0
+updater | 2025/09/17 09:57:21 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:21 INFO Latest version is 1.17.0
+updater | 2025/09/17 09:57:21 INFO No update needed for androidx.core:core-ktx 1.17.0
+updater | 2025/09/17 09:57:21 INFO Checking if junit:junit 4.13.2 needs updating
+  proxy | 2025/09/17 09:57:21 [014] GET https://maven.google.com/junit/group-index.xml
+  proxy | 2025/09/17 09:57:21 [014] 301 https://maven.google.com/junit/group-index.xml
+  proxy | 2025/09/17 09:57:21 [016] GET https://dl.google.com/dl/android/maven2/junit/group-index.xml
+  proxy | 2025/09/17 09:57:21 [016] 404 https://dl.google.com/dl/android/maven2/junit/group-index.xml
+  proxy | 2025/09/17 09:57:22 [018] GET https://repo.maven.apache.org/maven2/junit/junit/maven-metadata.xml
+  proxy | 2025/09/17 09:57:22 [018] 200 https://repo.maven.apache.org/maven2/junit/junit/maven-metadata.xml
+  proxy | 2025/09/17 09:57:22 [020] GET https://repo.maven.apache.org/maven2/junit/junit/
+  proxy | 2025/09/17 09:57:22 [020] 200 https://repo.maven.apache.org/maven2/junit/junit/
+updater | 2025/09/17 09:57:22 INFO Filtered out 9 pre-release versions
+updater | 2025/09/17 09:57:22 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:22 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:22 INFO Latest version is 4.13.2
+updater | 2025/09/17 09:57:22 INFO No update needed for junit:junit 4.13.2
+updater | 2025/09/17 09:57:22 INFO Checking if androidx.test.ext:junit 1.3.0 needs updating
+  proxy | 2025/09/17 09:57:22 [022] GET https://maven.google.com/androidx/test/ext/group-index.xml
+  proxy | 2025/09/17 09:57:22 [022] 301 https://maven.google.com/androidx/test/ext/group-index.xml
+  proxy | 2025/09/17 09:57:22 [024] GET https://dl.google.com/dl/android/maven2/androidx/test/ext/group-index.xml
+  proxy | 2025/09/17 09:57:22 [024] 200 https://dl.google.com/dl/android/maven2/androidx/test/ext/group-index.xml
+  proxy | 2025/09/17 09:57:23 [026] GET https://repo.maven.apache.org/maven2/androidx/test/ext/junit/maven-metadata.xml
+  proxy | 2025/09/17 09:57:23 [026] 404 https://repo.maven.apache.org/maven2/androidx/test/ext/junit/maven-metadata.xml
+  proxy | 2025/09/17 09:57:23 [028] GET https://repo.maven.apache.org/maven2/androidx/test/ext/junit/
+  proxy | 2025/09/17 09:57:23 [028] 404 https://repo.maven.apache.org/maven2/androidx/test/ext/junit/
+updater | 2025/09/17 09:57:23 INFO Filtered out 49 pre-release versions
+updater | 2025/09/17 09:57:23 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:23 INFO Release date not available for version 1.3.0
+updater | 2025/09/17 09:57:23 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:23 INFO Latest version is 1.3.0
+updater | 2025/09/17 09:57:23 INFO No update needed for androidx.test.ext:junit 1.3.0
+updater | 2025/09/17 09:57:23 INFO Checking if androidx.test.espresso:espresso-core 3.7.0 needs updating
+  proxy | 2025/09/17 09:57:23 [030] GET https://maven.google.com/androidx/test/espresso/group-index.xml
+  proxy | 2025/09/17 09:57:23 [030] 301 https://maven.google.com/androidx/test/espresso/group-index.xml
+  proxy | 2025/09/17 09:57:23 [032] GET https://dl.google.com/dl/android/maven2/androidx/test/espresso/group-index.xml
+  proxy | 2025/09/17 09:57:23 [032] 200 https://dl.google.com/dl/android/maven2/androidx/test/espresso/group-index.xml
+  proxy | 2025/09/17 09:57:24 [034] GET https://repo.maven.apache.org/maven2/androidx/test/espresso/espresso-core/maven-metadata.xml
+  proxy | 2025/09/17 09:57:24 [034] 404 https://repo.maven.apache.org/maven2/androidx/test/espresso/espresso-core/maven-metadata.xml
+  proxy | 2025/09/17 09:57:24 [036] GET https://repo.maven.apache.org/maven2/androidx/test/espresso/espresso-core/
+  proxy | 2025/09/17 09:57:24 [036] 404 https://repo.maven.apache.org/maven2/androidx/test/espresso/espresso-core/
+updater | 2025/09/17 09:57:24 INFO Filtered out 55 pre-release versions
+updater | 2025/09/17 09:57:24 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:24 INFO Release date not available for version 3.7.0
+updater | 2025/09/17 09:57:24 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:24 INFO Latest version is 3.7.0
+updater | 2025/09/17 09:57:24 INFO No update needed for androidx.test.espresso:espresso-core 3.7.0
+updater | 2025/09/17 09:57:24 INFO Checking if androidx.lifecycle:lifecycle-runtime-ktx 2.9.3 needs updating
+  proxy | 2025/09/17 09:57:24 [038] GET https://maven.google.com/androidx/lifecycle/group-index.xml
+  proxy | 2025/09/17 09:57:24 [038] 301 https://maven.google.com/androidx/lifecycle/group-index.xml
+  proxy | 2025/09/17 09:57:24 [040] GET https://dl.google.com/dl/android/maven2/androidx/lifecycle/group-index.xml
+  proxy | 2025/09/17 09:57:24 [040] 200 https://dl.google.com/dl/android/maven2/androidx/lifecycle/group-index.xml
+  proxy | 2025/09/17 09:57:25 [042] GET https://repo.maven.apache.org/maven2/androidx/lifecycle/lifecycle-runtime-ktx/maven-metadata.xml
+  proxy | 2025/09/17 09:57:25 [042] 404 https://repo.maven.apache.org/maven2/androidx/lifecycle/lifecycle-runtime-ktx/maven-metadata.xml
+  proxy | 2025/09/17 09:57:25 [044] GET https://repo.maven.apache.org/maven2/androidx/lifecycle/lifecycle-runtime-ktx/
+  proxy | 2025/09/17 09:57:25 [044] 404 https://repo.maven.apache.org/maven2/androidx/lifecycle/lifecycle-runtime-ktx/
+updater | 2025/09/17 09:57:25 INFO Filtered out 69 pre-release versions
+updater | 2025/09/17 09:57:25 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:25 INFO Release date not available for version 2.9.3
+updater | 2025/09/17 09:57:25 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:25 INFO Latest version is 2.9.3
+updater | 2025/09/17 09:57:25 INFO No update needed for androidx.lifecycle:lifecycle-runtime-ktx 2.9.3
+updater | 2025/09/17 09:57:25 INFO Checking if androidx.activity:activity-compose 1.11.0 needs updating
+  proxy | 2025/09/17 09:57:25 [046] GET https://maven.google.com/androidx/activity/group-index.xml
+  proxy | 2025/09/17 09:57:25 [046] 301 https://maven.google.com/androidx/activity/group-index.xml
+  proxy | 2025/09/17 09:57:25 [048] GET https://dl.google.com/dl/android/maven2/androidx/activity/group-index.xml
+  proxy | 2025/09/17 09:57:26 [048] 200 https://dl.google.com/dl/android/maven2/androidx/activity/group-index.xml
+  proxy | 2025/09/17 09:57:26 [050] GET https://repo.maven.apache.org/maven2/androidx/activity/activity-compose/maven-metadata.xml
+  proxy | 2025/09/17 09:57:26 [050] 404 https://repo.maven.apache.org/maven2/androidx/activity/activity-compose/maven-metadata.xml
+  proxy | 2025/09/17 09:57:26 [052] GET https://repo.maven.apache.org/maven2/androidx/activity/activity-compose/
+  proxy | 2025/09/17 09:57:26 [052] 404 https://repo.maven.apache.org/maven2/androidx/activity/activity-compose/
+updater | 2025/09/17 09:57:26 INFO Filtered out 67 pre-release versions
+updater | 2025/09/17 09:57:26 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:26 INFO Release date not available for version 1.11.0
+updater | 2025/09/17 09:57:26 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:26 INFO Latest version is 1.11.0
+updater | 2025/09/17 09:57:26 INFO No update needed for androidx.activity:activity-compose 1.11.0
+updater | 2025/09/17 09:57:26 INFO Checking if androidx.compose:compose-bom 2024.09.00 needs updating
+  proxy | 2025/09/17 09:57:26 [054] GET https://maven.google.com/androidx/compose/group-index.xml
+  proxy | 2025/09/17 09:57:26 [054] 301 https://maven.google.com/androidx/compose/group-index.xml
+  proxy | 2025/09/17 09:57:26 [056] GET https://dl.google.com/dl/android/maven2/androidx/compose/group-index.xml
+  proxy | 2025/09/17 09:57:27 [056] 200 https://dl.google.com/dl/android/maven2/androidx/compose/group-index.xml
+  proxy | 2025/09/17 09:57:27 [058] GET https://repo.maven.apache.org/maven2/androidx/compose/compose-bom/maven-metadata.xml
+  proxy | 2025/09/17 09:57:27 [058] 404 https://repo.maven.apache.org/maven2/androidx/compose/compose-bom/maven-metadata.xml
+  proxy | 2025/09/17 09:57:27 [060] GET https://repo.maven.apache.org/maven2/androidx/compose/compose-bom/
+  proxy | 2025/09/17 09:57:27 [060] 404 https://repo.maven.apache.org/maven2/androidx/compose/compose-bom/
+updater | 2025/09/17 09:57:27 INFO Filtered out 2 pre-release versions
+updater | 2025/09/17 09:57:27 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:27 INFO Release date not available for version 2025.09.00
+updater | 2025/09/17 09:57:27 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:27 INFO Latest version is 2025.09.00
+updater | 2025/09/17 09:57:27 INFO Requirements to unlock own
+updater | 2025/09/17 09:57:27 INFO Requirements update strategy
+updater | 2025/09/17 09:57:27 INFO Updating androidx.compose:compose-bom from 2024.09.00 to 2025.09.00
+updater | 2025/09/17 09:57:27 INFO Submitting androidx.compose:compose-bom pull request for creation
+  proxy | 2025/09/17 09:57:28 [062] GET https://api.github.com:443/repos/ParaskP7/test-dependabot-cli/commits?per_page=100
+  proxy | 2025/09/17 09:57:28 [062] 200 https://api.github.com:443/repos/ParaskP7/test-dependabot-cli/commits?per_page=100
+  proxy | 2025/09/17 09:57:28 [064] GET https://maven.google.com/androidx/compose/compose-bom/2025.09.00/compose-bom-2025.09.00.pom
+  proxy | 2025/09/17 09:57:28 [064] 301 https://maven.google.com/androidx/compose/compose-bom/2025.09.00/compose-bom-2025.09.00.pom
+  proxy | 2025/09/17 09:57:29 [066] GET https://dl.google.com/dl/android/maven2/androidx/compose/compose-bom/2025.09.00/compose-bom-2025.09.00.pom
+  proxy | 2025/09/17 09:57:29 [066] 200 https://dl.google.com/dl/android/maven2/androidx/compose/compose-bom/2025.09.00/compose-bom-2025.09.00.pom
+  proxy | 2025/09/17 09:57:29 [067] POST http://host.docker.internal:50478/update_jobs/cli/create_pull_request
+  proxy | 2025/09/17 09:57:29 [067] 200 http://host.docker.internal:50478/update_jobs/cli/create_pull_request
+updater | 2025/09/17 09:57:29 INFO Checking if com.android.application 8.13.0 needs updating
+  proxy | 2025/09/17 09:57:30 [069] GET https://plugins.gradle.org/m2/com/android/application/com.android.application.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:30 [069] 303 https://plugins.gradle.org/m2/com/android/application/com.android.application.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:30 [071] GET https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:30 [071] 404 https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:30 [073] GET https://maven.google.com/com/android/application/group-index.xml
+  proxy | 2025/09/17 09:57:30 [073] 301 https://maven.google.com/com/android/application/group-index.xml
+  proxy | 2025/09/17 09:57:30 [075] GET https://dl.google.com/dl/android/maven2/com/android/application/group-index.xml
+  proxy | 2025/09/17 09:57:31 [075] 200 https://dl.google.com/dl/android/maven2/com/android/application/group-index.xml
+  proxy | 2025/09/17 09:57:31 [077] GET https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:31 [077] 404 https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:57:31 [077] * auth'd git request previously retried, won't retry again. (cached)
+  proxy | 2025/09/17 09:57:31 [079] GET https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/
+  proxy | 2025/09/17 09:57:31 [079] 404 https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/
+updater | 2025/09/17 09:57:31 INFO Filtered out 304 pre-release versions
+updater | 2025/09/17 09:57:31 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:31 INFO Release date not available for version 8.13.0
+updater | 2025/09/17 09:57:31 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:31 INFO Latest version is 8.13.0
+updater | 2025/09/17 09:57:31 INFO No update needed for com.android.application 8.13.0
+updater | 2025/09/17 09:57:31 INFO Checking if org.jetbrains.kotlin.android 2.0.21 needs updating
+  proxy | 2025/09/17 09:57:31 [081] GET https://plugins.gradle.org/m2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:31 [081] 200 https://plugins.gradle.org/m2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:32 [083] GET https://maven.google.com/org/jetbrains/kotlin/android/group-index.xml
+  proxy | 2025/09/17 09:57:32 [083] 301 https://maven.google.com/org/jetbrains/kotlin/android/group-index.xml
+  proxy | 2025/09/17 09:57:32 [085] GET https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/android/group-index.xml
+  proxy | 2025/09/17 09:57:32 [085] 404 https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/android/group-index.xml
+  proxy | 2025/09/17 09:57:32 [087] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:32 [087] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:32 [089] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/
+  proxy | 2025/09/17 09:57:32 [089] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/
+updater | 2025/09/17 09:57:32 INFO Filtered out 134 pre-release versions
+updater | 2025/09/17 09:57:32 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:32 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:32 INFO Latest version is 2.2.20
+  proxy | 2025/09/17 09:57:33 [091] GET https://plugins.gradle.org/m2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:33 [091] 200 https://plugins.gradle.org/m2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:57:33 [093] GET https://maven.google.com/org/jetbrains/kotlin/android/group-index.xml
+  proxy | 2025/09/17 09:57:33 [093] 301 https://maven.google.com/org/jetbrains/kotlin/android/group-index.xml (cached)
+  proxy | 2025/09/17 09:57:33 [095] GET https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/android/group-index.xml
+  proxy | 2025/09/17 09:57:33 [095] 404 https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/android/group-index.xml (cached)
+  proxy | 2025/09/17 09:57:33 [095] * auth'd git request previously retried, won't retry again. (cached)
+  proxy | 2025/09/17 09:57:33 [097] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:33 [097] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:57:33 [099] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/
+  proxy | 2025/09/17 09:57:33 [099] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/ (cached)
+  proxy | 2025/09/17 09:57:33 [101] GET https://plugins.gradle.org/m2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:33 [101] 200 https://plugins.gradle.org/m2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:33 [103] GET https://maven.google.com/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:57:33 [103] 301 https://maven.google.com/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:57:34 [105] GET https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:57:34 [105] 404 https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:57:34 [107] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:34 [107] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:34 [109] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/
+  proxy | 2025/09/17 09:57:34 [109] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/
+updater | 2025/09/17 09:57:34 INFO Requirements to unlock all
+updater | 2025/09/17 09:57:34 INFO Requirements update strategy
+  proxy | 2025/09/17 09:57:34 [111] GET https://plugins.gradle.org/m2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:34 [111] 200 https://plugins.gradle.org/m2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:57:34 [113] GET https://maven.google.com/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:57:34 [113] 301 https://maven.google.com/org/jetbrains/kotlin/plugin/compose/group-index.xml (cached)
+  proxy | 2025/09/17 09:57:35 [115] GET https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:57:35 [115] 404 https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/plugin/compose/group-index.xml (cached)
+  proxy | 2025/09/17 09:57:35 [115] * auth'd git request previously retried, won't retry again. (cached)
+  proxy | 2025/09/17 09:57:35 [117] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:57:35 [117] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:57:35 [119] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/
+  proxy | 2025/09/17 09:57:35 [119] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/ (cached)
+updater | 2025/09/17 09:57:35 INFO Filtered out 68 pre-release versions
+updater | 2025/09/17 09:57:35 INFO Initializing cooldown filter
+updater | 2025/09/17 09:57:35 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:57:35 INFO Updating org.jetbrains.kotlin.android, org.jetbrains.kotlin.plugin.compose
+updater | 2025/09/17 09:57:35 INFO Submitting org.jetbrains.kotlin.android, org.jetbrains.kotlin.plugin.compose pull request for creation
+  proxy | 2025/09/17 09:57:35 [121] GET https://api.github.com:443/repos/ParaskP7/test-dependabot-cli/commits?per_page=100
+  proxy | 2025/09/17 09:57:35 [121] 200 https://api.github.com:443/repos/ParaskP7/test-dependabot-cli/commits?per_page=100 (cached)
+  proxy | 2025/09/17 09:57:35 [123] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/2.2.20/org.jetbrains.kotlin.android.gradle.plugin-2.2.20.pom
+  proxy | 2025/09/17 09:57:35 [123] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/2.2.20/org.jetbrains.kotlin.android.gradle.plugin-2.2.20.pom
+  proxy | 2025/09/17 09:57:35 [125] GET https://api.github.com:443/repos/JetBrains/kotlin/releases?per_page=100
+  proxy | 2025/09/17 09:57:36 [125] 200 https://api.github.com:443/repos/JetBrains/kotlin/releases?per_page=100
+  proxy | 2025/09/17 09:57:37 [127] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/
+  proxy | 2025/09/17 09:57:37 [127] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/
+  proxy | 2025/09/17 09:57:38 [129] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/docs
+  proxy | 2025/09/17 09:57:38 [129] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/docs
+  proxy | 2025/09/17 09:57:38 [131] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/spec-docs
+  proxy | 2025/09/17 09:57:38 [131] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/spec-docs
+  proxy | 2025/09/17 09:57:38 [133] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/ChangeLog.md?ref=master
+  proxy | 2025/09/17 09:57:38 [133] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/ChangeLog.md?ref=master
+  proxy | 2025/09/17 09:57:38 [135] GET https://github.com/JetBrains/kotlin.git/info/refs?service=git-upload-pack
+  proxy | 2025/09/17 09:57:39 [135] 200 https://github.com/JetBrains/kotlin.git/info/refs?service=git-upload-pack
+  proxy | 2025/09/17 09:57:55 [137] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:57:55 [137] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:57:57 Skipping sending metrics because api endpoint is empty
+  proxy | 2025/09/17 09:57:58 [139] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:57:58 [139] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:58:06 [141] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:58:06 [141] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21 (cached)
+  proxy | 2025/09/17 09:58:09 [143] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:58:09 [143] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20 (cached)
+  proxy | 2025/09/17 09:58:17 [145] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:58:17 [145] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21 (cached)
+  proxy | 2025/09/17 09:58:19 [147] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:58:19 [147] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20 (cached)
+  proxy | 2025/09/17 09:58:25 [149] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/2.2.20/org.jetbrains.kotlin.plugin.compose.gradle.plugin-2.2.20.pom
+  proxy | 2025/09/17 09:58:25 [149] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/2.2.20/org.jetbrains.kotlin.plugin.compose.gradle.plugin-2.2.20.pom
+  proxy | 2025/09/17 09:58:25 [151] GET https://api.github.com:443/repos/JetBrains/kotlin/releases?per_page=100
+  proxy | 2025/09/17 09:58:25 [151] 200 https://api.github.com:443/repos/JetBrains/kotlin/releases?per_page=100 (cached)
+  proxy | 2025/09/17 09:58:26 [153] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/
+  proxy | 2025/09/17 09:58:26 [153] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/ (cached)
+  proxy | 2025/09/17 09:58:26 [155] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/docs
+  proxy | 2025/09/17 09:58:26 [155] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/docs (cached)
+  proxy | 2025/09/17 09:58:26 [157] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/spec-docs
+  proxy | 2025/09/17 09:58:26 [157] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/spec-docs (cached)
+  proxy | 2025/09/17 09:58:26 [159] GET https://api.github.com:443/repos/JetBrains/kotlin/contents/ChangeLog.md?ref=master
+  proxy | 2025/09/17 09:58:26 [159] 200 https://api.github.com:443/repos/JetBrains/kotlin/contents/ChangeLog.md?ref=master (cached)
+  proxy | 2025/09/17 09:58:26 [161] GET https://github.com/JetBrains/kotlin.git/info/refs?service=git-upload-pack
+  proxy | 2025/09/17 09:58:26 [161] 200 https://github.com/JetBrains/kotlin.git/info/refs?service=git-upload-pack (cached)
+  proxy | 2025/09/17 09:58:42 [163] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:58:42 [163] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21 (cached)
+  proxy | 2025/09/17 09:58:45 [165] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:58:45 [165] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20 (cached)
+  proxy | 2025/09/17 09:58:53 [167] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:58:53 [167] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21 (cached)
+  proxy | 2025/09/17 09:58:55 [169] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:58:55 [169] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20 (cached)
+  proxy | 2025/09/17 09:58:57 Skipping sending metrics because api endpoint is empty
+  proxy | 2025/09/17 09:59:03 [171] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21
+  proxy | 2025/09/17 09:59:03 [171] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.0.21 (cached)
+  proxy | 2025/09/17 09:59:06 [173] GET https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20
+  proxy | 2025/09/17 09:59:06 [173] 200 https://api.github.com:443/repos/JetBrains/kotlin/commits?sha=v2.2.20 (cached)
+  proxy | 2025/09/17 09:59:33 [174] POST http://host.docker.internal:50478/update_jobs/cli/create_pull_request
+  proxy | 2025/09/17 09:59:33 [174] 200 http://host.docker.internal:50478/update_jobs/cli/create_pull_request
+updater | 2025/09/17 09:59:33 INFO Checking if org.jetbrains.kotlin.plugin.compose 2.0.21 needs updating
+  proxy | 2025/09/17 09:59:33 [176] GET https://plugins.gradle.org/m2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:59:33 [176] 200 https://plugins.gradle.org/m2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:59:33 [178] GET https://maven.google.com/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:59:33 [178] 301 https://maven.google.com/org/jetbrains/kotlin/plugin/compose/group-index.xml (cached)
+  proxy | 2025/09/17 09:59:33 [180] GET https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/plugin/compose/group-index.xml
+  proxy | 2025/09/17 09:59:33 [180] 404 https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/plugin/compose/group-index.xml (cached)
+  proxy | 2025/09/17 09:59:33 [180] * auth'd git request previously retried, won't retry again. (cached)
+  proxy | 2025/09/17 09:59:33 [182] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml
+  proxy | 2025/09/17 09:59:33 [182] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/maven-metadata.xml (cached)
+  proxy | 2025/09/17 09:59:34 [184] GET https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/
+  proxy | 2025/09/17 09:59:34 [184] 200 https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/plugin/compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin/ (cached)
+updater | 2025/09/17 09:59:34 INFO Filtered out 68 pre-release versions
+updater | 2025/09/17 09:59:34 INFO Initializing cooldown filter
+updater | 2025/09/17 09:59:34 INFO Filtered out 0 version(s) due to cooldown
+updater | 2025/09/17 09:59:34 INFO Latest version is 2.2.20
+updater | 2025/09/17 09:59:34 INFO Pull request already exists for org.jetbrains.kotlin.plugin.compose with latest version 2.2.20
+  proxy | 2025/09/17 09:59:34 [185] PATCH http://host.docker.internal:50478/update_jobs/cli/mark_as_processed
+  proxy | 2025/09/17 09:59:34 [185] 200 http://host.docker.internal:50478/update_jobs/cli/mark_as_processed
+updater | 2025/09/17 09:59:34 INFO Finished job processing
+updater | 2025/09/17 09:59:34 INFO Results:
+updater | +---------------------------------------------------------------------------------------------------------------------------------+
+updater | |                                               Changes to Dependabot Pull Requests                                               |
+updater | +---------+-----------------------------------------------------------------------------------------------------------------------+
+updater | | created | androidx.compose:compose-bom ( from 2024.09.00 to 2025.09.00 )                                                        |
+updater | | created | org.jetbrains.kotlin.android ( from 2.0.21 to 2.2.20 ), org.jetbrains.kotlin.plugin.compose ( from 2.0.21 to 2.2.20 ) |
+updater | +---------+-----------------------------------------------------------------------------------------------------------------------+
+  proxy | 2025/09/17 09:59:34 Skipping sending metrics because api endpoint is empty
+  proxy | 2025/09/17 09:59:34 33/90 calls cached (36%)

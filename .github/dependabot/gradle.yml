@@ -1,0 +1,13 @@
+# This is the input to Dependabot CLI.
+# For more examples of what you can do, see the smoke tests: https://github.com/dependabot/smoke-tests/tree/main/tests
+
+job:
+  # this is the directory defined in dependabot-core for the ecosystem
+  package-manager: gradle
+  allowed-updates:
+    - update-type: all
+  source:
+    provider: github
+    repo: ParaskP7/test-dependabot-cli
+    directory: /
+    branch: main
