@@ -11,3 +11,18 @@ job:
     repo: ParaskP7/test-dependabot-cli
     directory: /
     branch: main
+  ignore-conditions:
+    - dependency-name: "androidx.core:core-ktx"
+    - dependency-name: "junit:junit"
+    - dependency-name: "androidx.test.ext:junit"
+    - dependency-name: "androidx.test.espresso:espresso-core"
+    - dependency-name: "androidx.lifecycle:lifecycle-runtime-ktx"
+    - dependency-name: "androidx.activity:activity-compose"
+    - dependency-name: "androidx.compose:compose-bom"
+    - dependency-name: "androidx.compose.ui:ui"
+    - dependency-name: "androidx.compose.ui:ui-graphics"
+    - dependency-name: "androidx.compose.ui:ui-tooling"
+    - dependency-name: "androidx.compose.ui:ui-tooling-preview"
+    - dependency-name: "androidx.compose.ui:ui-test-manifest"
+    - dependency-name: "androidx.compose.ui:ui-test-junit4"
+    - dependency-name: "androidx.compose.material3:material3"
